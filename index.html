@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>IKEA Bill Splitter</h1>
+            <div class="header-totals">
+                <div class="total-box">
+                    <span>Invoice Total</span>
+                    <strong id="invoice-total">₹24,055.00</strong>
+                </div>
+                <div class="total-box highlight">
+                    <span>Discount to Split</span>
+                    <strong id="discount-total">-₹800.00</strong>
+                </div>
+                <div class="total-box">
+                    <span>Final Payable</span>
+                    <strong id="final-total">₹23,255.00</strong>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <aside class="sidebar">
+                <div class="card users-card">
+                    <h2>Friends to Split</h2>
+                    <div class="add-user-section">
+                        <input type="text" id="new-user-input" placeholder="Enter name...">
+                        <button id="add-user-btn" class="btn-primary">Add</button>
+                    </div>
+                    <ul id="users-list" class="users-list">
+                        <!-- Users will be populated here -->
+                    </ul>
+                </div>
+                
+                <div class="card summary-card">
+                    <h2>Split Summary</h2>
+                    <div id="summary-list" class="summary-list">
+                        <!-- Summary will be populated here -->
+                    </div>
+                    <div class="summary-footer">
+                        <div class="summary-row total-row">
+                            <span>Total Allocated</span>
+                            <strong id="allocated-total">₹0.00</strong>
+                        </div>
+                        <p class="note">* Discount is applied proportionally to everyone's total based on their allocated items.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Invoice Items (62 Total)</h2>
+                    <div class="filters">
+                        <input type="text" id="search-input" placeholder="Search items...">
+                    </div>
+                </div>
+                <div id="products-grid" class="products-grid">
+                    <!-- Product cards will be populated here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
