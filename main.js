@@ -188,7 +188,7 @@ const renderProducts = (searchTerm = '') => {
         const badgeText = unallocated === 0 ? 'All Assigned' : `${unallocated} left to assign`;
 
         card.innerHTML = `
-            <img class="product-image" src="public/images/${item.id}.jpg" alt="${item.name}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'200\\' height=\\'200\\' fill=\\'%23f1f5f9\\'><rect width=\\'100%\\' height=\\'100%\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'14\\' fill=\\'%2394a3b8\\'>No Image</text></svg>'">
+            <img class="product-image" src="assets/images/${item.id}.jpg" alt="${item.name}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'200\\' height=\\'200\\' fill=\\'%23f1f5f9\\'><rect width=\\'100%\\' height=\\'100%\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' font-family=\\'sans-serif\\' font-size=\\'14\\' fill=\\'%2394a3b8\\'>No Image</text></svg>'">
             <div class="product-info">
                 <div class="product-title" title="${item.name}">${item.name}</div>
                 <div class="product-id">Art. ${item.id}</div>
